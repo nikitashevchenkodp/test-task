@@ -17,6 +17,7 @@
 .item-title {
     color: #303247;
     font-size: 25px;
+    font-weight: 600;
     margin: 0;
     padding: 0;
     margin-bottom: 16px;
@@ -41,3 +42,4 @@
     right: 3px;
     font-weight: 600;
 }
+
