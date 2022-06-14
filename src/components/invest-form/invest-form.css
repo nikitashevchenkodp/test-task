@@ -1,0 +1,101 @@
+
+.form-title {
+    font-size: 35px;
+    line-height: 42px;
+    margin-bottom: 32px;
+}
+
+.form-info {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 400;
+    margin-bottom: 8px;
+}
+
+.form-loan-title {
+    margin-bottom: 32px;
+    font-size: 20px;
+    line-height: 24.2px;
+}
+
+.form-amount {
+    margin-top: 64px;
+    margin-bottom: 29px;
+    font-size: 30px;
+    line-height: 36.1px;
+}
+
+.form-invest {
+    display: flex;
+    align-items: center;
+}
+
+.error-message {
+    position: absolute;
+    bottom: -30px;
+    left: 0px;
+    color: red;
+}
+
+.input-container {
+    position: relative;
+}
+
+.form-input {
+    width: 328px;
+    height: 54px;
+    margin-right: 32px;
+    border: 1px solid rgba(48, 50, 71, 0.1);
+    border-radius: 5px;
+    text-align: right;
+    font-size: 20px;
+    line-height: 24px;
+    padding-right: 20px;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+input[type='number'],
+input[type="number"]:hover,
+input[type="number"]:focus {
+    appearance: none;
+    -moz-appearance: textfield;
+}
+
+@media screen and (max-width: 700px) {
+    .form-title {
+        font-size: 25px;
+        line-height: 30px;
+        margin-bottom: 18px;
+    }
+    
+    .form-info {
+        font-size: 18px;
+        line-height: 20px;
+        margin-bottom: 8px;
+    }
+    
+    .form-loan-title {
+        margin-bottom: 20px;
+        font-size: 18px;
+        line-height: 21px;
+    }
+    
+    .form-amount {
+        margin-top: 32px;
+        margin-bottom: 17px;
+        font-size: 20px;
+        line-height: 24px;
+    }
+    
+    .form-input {
+        width: 228px;
+        height: 44px;
+        margin-right: 22px;
+        font-size: 18px;
+        line-height: 22px;
+        padding-right:17px;
+    }
+}

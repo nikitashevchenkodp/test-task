@@ -1,9 +1,14 @@
 import React from 'react';
 import Button from '../button/button';
+import {formatNumberToUsd} from '../../utils/format-number';
 import './item-list-item.css';
 
 const ItemsListItem = ({item, onClick}) => {
-  const {title, available, annualised_return, amount, ltv} = item;
+
+  const {title, available, annualised_return, amount, ltv, invested} = item;
+
+  const disabled = available <= 0 ? true : false;
+
   return (
     <li className='item'>
       <div className='item-info'>
@@ -11,23 +16,28 @@ const ItemsListItem = ({item, onClick}) => {
           {title}
         </h5>
         <div className='item-details'>
-          Available: {available}
+          Available: {formatNumberToUsd(available)}
         </div>
         <div className='item-details'>
-          Anualised return: {annualised_return}
+          Anualised return: {annualised_return}%
         </div>
         <div className='item-details'>
-          Amount: {amount}
+          Amount: {formatNumberToUsd(amount)}
         </div>
-        <div className='item-details'>LTV: {ltv}</div>
+        <div className='item-details'>LTV: {ltv}%</div>
       </div>
       <div className='invest'>
-        <Button  onClick={onClick}>
+        {invested && <Invested />}
+        <Button  onClick={onClick} disabled = {disabled}>
           invest
         </Button>
       </div>
     </li>
   )
+}
+
+const Invested = () => {
+  return <span className='invested-label'>Invested</span>
 }
 
 export default ItemsListItem;

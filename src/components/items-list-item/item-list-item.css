@@ -34,3 +34,10 @@
     position: relative;
 }
 
+.invested-label {
+    position: absolute;
+    color: #51A571;
+    top: -35px;
+    right: 3px;
+    font-weight: 600;
+}

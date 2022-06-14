@@ -22,7 +22,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 627px;
+    max-width: 627px;
     height: 499px;
     position: relative;
     background-color: #fff;
@@ -33,4 +33,19 @@
 
 .modal-content.active {
     transform: scale(1);
+  }
+
+  @media screen and (max-width: 700px) {
+    .modal-content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      max-width: 527px;
+      height: 384px;
+      position: relative;
+      background-color: #fff;
+      transform: scale(0.5);
+      transition: 0.4s;
+      padding: 65px;
+  }
   }
