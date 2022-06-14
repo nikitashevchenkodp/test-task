@@ -1,0 +1,36 @@
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    border: 1px solid lightgray;
+    border-radius: 20px;
+    list-style: none;
+    padding: 30px 30px;
+    margin: 32px 0;
+}
+
+.item-info {
+    width: 70%;
+}
+
+.item-title {
+    color: #303247;
+    font-size: 25px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 16px;
+}
+
+.item-details {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 400;
+}
+
+.invest {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
