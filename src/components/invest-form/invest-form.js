@@ -52,8 +52,9 @@ const InvestForm = () => {
     validateInput();
   }, [value]);
 
-  const endTime = parseDate(loan?.term_remaining);
 
+  const endTime = parseDate(loan?.term_remaining);
+  
   const month = endTime.months > 0 ? <span>{endTime.months} months</span> : null;
   const days = endTime.days > 0 ? <span>{endTime.days} days</span> : null;
   const hours = endTime.hours > 0 ? <span>{endTime.hours} hours</span> : null;

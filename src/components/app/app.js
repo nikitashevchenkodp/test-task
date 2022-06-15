@@ -6,15 +6,15 @@ import './app.css'
 
 const App = () => {
   return (
-    <div>
+    <>
       <Header />
       <div className="container">
-      <div className="content-container">
-        <ItemsList />
-        <TotalPanel />
+        <div className="content-container">
+          <ItemsList />
+          <TotalPanel />
+        </div>
       </div>
-      </div>
-    </div>
+    </>
   )
 }
 

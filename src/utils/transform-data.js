@@ -1,3 +1,5 @@
+//Transform sring data to numbers without comma.
+
 export const transformData = (data) => {
     return data.map(element => {
       return {
